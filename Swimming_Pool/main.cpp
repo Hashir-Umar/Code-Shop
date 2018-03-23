@@ -15,7 +15,7 @@ int main()
 	cin >> w;
 	cout << "\tDepth: ";
 	cin >> d;
-    cout << "\tFilling Rate: ";
+    	cout << "\tFilling Rate: ";
 	cin >> fR;
 	cout << "\tDraining Rate: ";
 	cin >> dR;
