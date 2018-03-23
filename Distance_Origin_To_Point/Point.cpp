@@ -3,12 +3,12 @@
 
 Point::Point(const double &xP1, const double &yP1) :x(xP1), y(yP1) {}
 
-double Point::getX()
+double Point::getX() const
 {
 	return x;
 }
 
-double Point::getY()
+double Point::getY() const
 {
 	return y;
 }
