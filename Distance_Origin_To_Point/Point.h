@@ -7,8 +7,8 @@ class Point
 public:
 	Point(const double&, const double&);
 
-	double getX();
-	double getY();
+	double getX() const;
+	double getY() const;
 	double getDistance();
 };
 
