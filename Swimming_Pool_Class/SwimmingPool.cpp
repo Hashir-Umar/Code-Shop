@@ -16,7 +16,7 @@ SwimmingPool::~SwimmingPool()
 	depth = 0.0;
 	rateOfFilling = 0.0;
 	rateOfDraining = 0.0;
-    currntWaterInThePool = 0.0;
+    	currntWaterInThePool = 0.0;
 }
 
 double SwimmingPool::getLength()
@@ -89,9 +89,9 @@ double SwimmingPool::addWaterInSpecificTime(double givinTime)
 {
 	double addedWater = rateOfFilling * givinTime;	//Stooring The Water In Another Variable for Later Use
 	currntWaterInThePool = currntWaterInThePool + (addedWater);
-    double poolCapacity = getCapacityOfThePool();
+    	double poolCapacity = getCapacityOfThePool();
 	//In case Of Overflow This If statement Will be Executed
-    if (currntWaterInThePool > poolCapacity)    currntWaterInThePool = poolCapacity;
+   	if (currntWaterInThePool > poolCapacity)    currntWaterInThePool = poolCapacity;
 	return currntWaterInThePool;
 }
 double SwimmingPool::drainWaterInSpecificTime(double givinTime)
