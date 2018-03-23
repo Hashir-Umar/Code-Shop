@@ -1,0 +1,1 @@
+Create a class point having x and y co-ordinates as its constant data member. Initialize data members through appropriate constructors. Calculate the distance of a point from origin by using Pythagoras Theorem.
