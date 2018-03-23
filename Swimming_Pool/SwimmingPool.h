@@ -21,7 +21,7 @@ public:
 	double getRateOfDraining();
 	double getCurrentWaterLevel();
     
-    double getTimeToFillThePool();
+    	double getTimeToFillThePool();
 	double getTimeToDrainThePool();
 
 	double getCapacityOfThePool();
