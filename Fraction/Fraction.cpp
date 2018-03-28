@@ -1,11 +1,5 @@
 #include "Fraction.h"
 
-
-void Fraction::display()
-{
-	cout << num << "/" << den << endl;
-}
-
 Fraction::Fraction(int n, int d)
 {
 	if (d==0)
@@ -49,4 +43,9 @@ void Fraction::setNum(int n)
 void Fraction::setDen(int d)
 {
 	den = d;
+}
+
+void Fraction::display()
+{
+	std::cout << num << "/" << den << std::endl;
 }
