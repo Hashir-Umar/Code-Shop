@@ -1,52 +1,22 @@
-#include "Fraction.h"
-
-
-void Fraction::display()
+#pragma once
+#include <iostream>
+using namespace std;
+class Fraction
 {
-	cout << num << "/" << den << endl;
-}
+	int num;
+	int den;
+public:
+	void display();
+	Fraction(int, int);
+	Fraction();
+	~Fraction(void);
 
-Fraction::Fraction(int n, int d)
-{
-	if (d==0)
-		d=1;
+	Fraction(const Fraction&);
 
-	num = n;
-	den = d;
-}
+	int getNum() const;
+	int getDen() const;
 
-Fraction::Fraction(const Fraction &obj)
-{
-	num = obj.num;
-	den = obj.den;
-}
+	void setNum(int num);
+	void setDen(int den);
+};
 
-Fraction::Fraction()
-{
-	num = 0;
-	den = 1;
-}
-
-Fraction::~Fraction()
-{
-	num = 0;
-	den = 1;
-}
-
-int Fraction::getNum() const
-{
-	return num;
-}
-int Fraction::getDen() const
-{
-	return den;
-}
-
-void Fraction::setNum(int n)
-{
-	num = n;
-}
-void Fraction::setDen(int d)
-{
-	den = d;
-}
