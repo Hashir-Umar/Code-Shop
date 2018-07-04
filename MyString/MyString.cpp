@@ -23,7 +23,7 @@ MyString::MyString(const char* copy, unsigned int size)
 char* MyString::allocate(const char *copy)
 {
 	int len = 0;
-	for (; len != copy['\0']; len++);
+	for (; copy[len] != '\0'; len++);
 
 	char *orignal = new char[len + 1];
 
